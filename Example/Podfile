@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SafeCodable_Example' do
+  pod 'SafeCodable', :path => '../'
+
+  target 'SafeCodable_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
