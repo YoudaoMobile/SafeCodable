@@ -1,0 +1,23 @@
+PODS:
+  - SafeCodable (0.1.0):
+    - Sourcery
+  - Sourcery (0.17.0)
+
+DEPENDENCIES:
+  - SafeCodable (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Sourcery
+
+EXTERNAL SOURCES:
+  SafeCodable:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SafeCodable: c5bcb8a7fa057de4ed65c2b9b5a41970180d7ef9
+  Sourcery: 3ed61be7c8a1218fce349266139379dba477efe0
+
+PODFILE CHECKSUM: d86ccc8051b1a9e8fcc5a98a84167dac0eecd90e
+
+COCOAPODS: 1.7.5

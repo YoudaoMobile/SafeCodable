@@ -2,10 +2,40 @@ use_frameworks!
 
 target 'SafeCodable_Example' do
   pod 'SafeCodable', :path => '../'
-
+  
   target 'SafeCodable_Tests' do
     inherit! :search_paths
-
+    
     
   end
 end
+
+
+UI.puts "pod_name}:"
+
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    puts "XXXXX#{target.name}.#{target.build_phases}"
+    target.project.new(Xcodeproj::Project::Object::PBXShellScriptBuildPhase).tap do |phase|
+      phase.name = "aaa"
+      target.build_phases << phase
+      UI.message("XXXXX") do
+      end
+    end
+  end
+   UI.puts "AAAAA"
+  
+   
+#  native_targets.each do |native_target|
+#    native_target.project.new(Xcodeproj::Project::Object::PBXShellScriptBuildPhase).tap do |phase|
+#      phase.name = "aaa"
+#      native_target.build_phases << phase
+#      UI.message("XXXXX") do
+#      end
+#    end
+#  end
+
+end
+
+
